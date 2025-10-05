@@ -1,0 +1,3 @@
+main CFG:
+	entry -> ['const', 'jmp']
+	b1 -> ['print']

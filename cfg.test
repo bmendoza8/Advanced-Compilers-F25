@@ -1,0 +1,8 @@
+
+@main {
+  i: int = const 1;
+  jmp .end;
+.end:
+  print i;
+}
+
