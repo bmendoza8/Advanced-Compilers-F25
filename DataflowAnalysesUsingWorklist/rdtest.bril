@@ -1,0 +1,14 @@
+{
+  "functions": [
+    {
+      "name": "main",
+      "instrs": [
+        {"op": "const", "dest": "x", "type": "int", "value": 1},
+        {"op": "const", "dest": "y", "type": "int", "value": 2},
+        {"op": "add", "dest": "z", "type": "int", "args": ["x", "y"]},
+        {"op": "mul", "dest": "x", "type": "int", "args": ["z", "y"]},
+        {"op": "print", "args": ["x"]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Test 1: Reaching Definitions
+[[test]]
+name = "rdtest"
+cmd = "python3 df.py rd"
+input = "test/rd_turnttest.bril"
+output = "test/rd_turnttest.out"
+
+# Test 2: Available Expressions
+[[test]]
+name = "aetest"
+cmd = "python3 df.py ae"
+input = "test/ae_turnttest.bril"
+output = "test/ae_turnttest.out"
