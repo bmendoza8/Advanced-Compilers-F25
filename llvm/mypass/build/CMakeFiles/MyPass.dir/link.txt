@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared  -o MyPass.so CMakeFiles/MyPass.dir/mypass.cpp.o 

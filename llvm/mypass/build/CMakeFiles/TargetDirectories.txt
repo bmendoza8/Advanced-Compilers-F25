@@ -1,0 +1,7 @@
+/home/bmendoza8/llvm-passes/mypass/build/CMakeFiles/intrinsics_gen.dir
+/home/bmendoza8/llvm-passes/mypass/build/CMakeFiles/omp_gen.dir
+/home/bmendoza8/llvm-passes/mypass/build/CMakeFiles/acc_gen.dir
+/home/bmendoza8/llvm-passes/mypass/build/CMakeFiles/RISCVTargetParserTableGen.dir
+/home/bmendoza8/llvm-passes/mypass/build/CMakeFiles/MyPass.dir
+/home/bmendoza8/llvm-passes/mypass/build/CMakeFiles/edit_cache.dir
+/home/bmendoza8/llvm-passes/mypass/build/CMakeFiles/rebuild_cache.dir
