@@ -1,0 +1,7 @@
+/home/bmendoza8/Advanced-Compilers-F25/llvm/defuse/build/CMakeFiles/intrinsics_gen.dir
+/home/bmendoza8/Advanced-Compilers-F25/llvm/defuse/build/CMakeFiles/omp_gen.dir
+/home/bmendoza8/Advanced-Compilers-F25/llvm/defuse/build/CMakeFiles/acc_gen.dir
+/home/bmendoza8/Advanced-Compilers-F25/llvm/defuse/build/CMakeFiles/RISCVTargetParserTableGen.dir
+/home/bmendoza8/Advanced-Compilers-F25/llvm/defuse/build/CMakeFiles/DefUseChains.dir
+/home/bmendoza8/Advanced-Compilers-F25/llvm/defuse/build/CMakeFiles/edit_cache.dir
+/home/bmendoza8/Advanced-Compilers-F25/llvm/defuse/build/CMakeFiles/rebuild_cache.dir
