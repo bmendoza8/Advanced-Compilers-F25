@@ -1,0 +1,16 @@
+=== MemorySSADemo on function: demo ===
+BasicBlock: 
+  1 = MemoryDef(liveOnEntry)
+  2 = MemoryDef(1)
+  MemoryUse(2)
+
+// MemorySSA graph for function demo
+digraph "MemorySSA_demo" {
+  n0 [label="1 = MemoryDef(liveOnEntry)"];
+  n1 [label="2 = MemoryDef(1)"];
+  n2 [label="MemoryUse(2)"];
+  n3 -> n0;
+  n0 -> n1;
+  n1 -> n2;
+}
+
