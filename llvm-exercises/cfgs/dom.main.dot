@@ -1,0 +1,17 @@
+digraph "Dominator tree for 'main' function" {
+	label="Dominator tree for 'main' function";
+
+	Node0x5a6925a9aef0 [shape=record,label="{0:\l|  %1 = alloca [512 x [512 x double]], align 16\l  %2 = alloca [512 x [512 x double]], align 16\l  %3 = alloca [512 x [512 x double]], align 16\l  br label %4\l}"];
+	Node0x5a6925a9aef0 -> Node0x5a6925a9d270;
+	Node0x5a6925a9d270 [shape=record,label="{4:\l|  %.013 = phi i32 [ 0, %0 ], [ %23, %22 ]\l  br label %5\l}"];
+	Node0x5a6925a9d270 -> Node0x5a6925a9db50;
+	Node0x5a6925a9db50 [shape=record,label="{5:\l|  %.02 = phi i32 [ 0, %4 ], [ %19, %18 ]\l  %6 = add nsw i32 %.013, %.02\l  %7 = sitofp i32 %6 to double\l  %8 = sext i32 %.013 to i64\l  %9 = getelementptr inbounds [512 x [512 x double]], ptr %1, i64 0, i64 %8\l  %10 = sext i32 %.02 to i64\l  %11 = getelementptr inbounds [512 x double], ptr %9, i64 0, i64 %10\l  store double %7, ptr %11, align 8\l  %12 = sub nsw i32 %.013, %.02\l  %13 = sitofp i32 %12 to double\l  %14 = sext i32 %.013 to i64\l  %15 = getelementptr inbounds [512 x [512 x double]], ptr %2, i64 0, i64 %14\l  %16 = sext i32 %.02 to i64\l  %17 = getelementptr inbounds [512 x double], ptr %15, i64 0, i64 %16\l  store double %13, ptr %17, align 8\l  br label %18\l}"];
+	Node0x5a6925a9db50 -> Node0x5a6925a9dbb0;
+	Node0x5a6925a9dbb0 [shape=record,label="{18:\l|  %19 = add nsw i32 %.02, 1\l  %20 = icmp slt i32 %19, 512\l  br i1 %20, label %5, label %21, !llvm.loop !6\l}"];
+	Node0x5a6925a9dbb0 -> Node0x5a6925a9dc10;
+	Node0x5a6925a9dc10 [shape=record,label="{21:\l|  br label %22\l}"];
+	Node0x5a6925a9dc10 -> Node0x5a6925a9dc70;
+	Node0x5a6925a9dc70 [shape=record,label="{22:\l|  %23 = add nsw i32 %.013, 1\l  %24 = icmp slt i32 %23, 512\l  br i1 %24, label %4, label %25, !llvm.loop !8\l}"];
+	Node0x5a6925a9dc70 -> Node0x5a6925a9dcd0;
+	Node0x5a6925a9dcd0 [shape=record,label="{25:\l|  %26 = getelementptr inbounds [512 x [512 x double]], ptr %1, i64 0, i64 0\l  %27 = getelementptr inbounds [512 x [512 x double]], ptr %2, i64 0, i64 0\l  %28 = getelementptr inbounds [512 x [512 x double]], ptr %3, i64 0, i64 0\l  call void @matmul(ptr noundef %26, ptr noundef %27, ptr noundef %28)\l  %29 = getelementptr inbounds [512 x [512 x double]], ptr %3, i64 0, i64 511\l  %30 = getelementptr inbounds [512 x double], ptr %29, i64 0, i64 511\l  %31 = load double, ptr %30, align 8\l  %32 = call i32 (ptr, ...) @printf(ptr noundef @.str, double noundef %31)\l  ret i32 0\l}"];
+}
